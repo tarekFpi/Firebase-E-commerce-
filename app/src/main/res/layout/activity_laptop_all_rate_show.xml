@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".laptop_all_rateShow">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/home_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="LapTop product Show"
+            android:background="#5C58D8"
+            app:titleTextColor="#E4DEDE"
+            android:textAlignment="center"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_below="@+id/appbar_id"
+        android:background="@drawable/search_back"
+        android:layout_marginTop="8dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:id="@+id/laptop_serchId"
+        android:elevation="10dp"
+        android:padding="10dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:hint="Search prodcut Name"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        />
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/laptop_serchId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:id="@+id/recycler_laptop_rat_show"/>
+</RelativeLayout>

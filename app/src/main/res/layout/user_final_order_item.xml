@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="20dp"
+    android:layout_margin="8dp"
+    android:elevation="20dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativ"
+       android:background="@drawable/angry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="7dp">
+
+
+        <TextView
+            android:id="@+id/final_show_pd_all"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Item all Deatils"
+            android:textColor="#EDE7E7"
+            android:textColorHint="#EDE7E7"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_below="@+id/final_show_pd_all"
+            android:backgroundTint="#F11991"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="5dp"
+            android:background="#ffff" />
+
+        <TextView
+            android:id="@+id/final_show_pd_userName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/final_show_pd_all"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="20dp"
+            android:text="User User"
+            android:textColor="#EDE7E7"
+            android:textColorHint="#EDE7E7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/final_show_pd_email"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/final_show_pd_userName"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="User Email"
+            android:textColor="#EDE7E7"
+            android:textColorHint="#EDE7E7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/final_show_pd_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/final_show_pd_email"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="User Location"
+            android:textColor="#EDE7E7"
+            android:textColorHint="#EDE7E7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/final_show_pd_flat"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/final_show_pd_location"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="Flat No"
+            android:textColor="#EDE7E7"
+            android:textColorHint="#EDE7E7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/final_show_pd_city"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/final_show_pd_flat"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="City"
+            android:textColor="#EDE7E7"
+            android:textColorHint="#EDE7E7"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/final_show_pd_phon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/final_show_pd_city"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:text="phon Number"
+            android:textColor="#EDE7E7"
+            android:textColorHint="#EDE7E7"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginRight="8dp"
+            android:layout_alignParentRight="true"
+            android:id="@+id/final_show_pd_totalPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/final_show_pd_city"
+            android:layout_marginTop="10dp"
+            android:text="Total Price"
+            android:textColor="#fff0"
+            android:textColorHint="#fff0"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+           android:layout_marginLeft="8dp"
+            android:id="@+id/final_show_pd_orderDate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/final_show_pd_phon"
+            android:layout_marginTop="10dp"
+            android:text="Date:"
+            android:textColor="#EDE7E7"
+            android:textColorHint="#EDE7E7"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_marginLeft="8dp"
+            android:id="@+id/final_Flat_Shipping_rate_free"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/final_show_pd_orderDate"
+            android:layout_marginTop="10dp"
+            android:text="Shipping Rate:"
+            android:textColor="#fff0"
+            android:textColorHint="#fff0"
+            android:textSize="17sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

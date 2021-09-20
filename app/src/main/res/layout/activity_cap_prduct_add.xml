@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    tools:context=".cap_prductAdd">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/cap_add_toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="New Style Cap Add"
+                android:background="#5C58D8"
+                app:titleTextColor="#E4DEDE"
+                android:textAlignment="center"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+
+             android:layout_below="@+id/appbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/angry"
+             >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="300dp"
+                    android:layout_height="300dp"
+                    android:layout_gravity="center"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:elevation="8dp"
+                    app:cardCornerRadius="20dp"
+                    app:cardElevation="10dp">
+
+                    <ImageView
+                        android:id="@+id/cap_PImage"
+                        android:layout_width="300dp"
+                        android:layout_height="300dp"
+                        android:layout_gravity="center"
+                        android:background="@drawable/search_back"
+                        android:elevation="20dp"
+                        android:scaleType="fitXY" />
+                </androidx.cardview.widget.CardView>
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/cap_pdcord"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/layout_back_white"
+                    android:elevation="20dp"
+                    android:hint="Product Cord"
+                    android:padding="20dp"
+                    android:textColor="#EFEFF3"
+                    android:textColorHint="#D6D6CC"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cap_pdName"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/layout_back_white"
+                    android:elevation="20dp"
+                    android:hint="Product Name"
+                    android:padding="20dp"
+                    android:textColor="#EFEFF3"
+                    android:textColorHint="#D6D6CC"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <EditText
+                    android:id="@+id/cap_pdDescr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/layout_back_white"
+                    android:elevation="20dp"
+                    android:hint="Product Description"
+                    android:padding="20dp"
+                    android:textColor="#E2E3EA"
+                    android:textColorHint="#ECECE6"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/cap_pdPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/layout_back_white"
+                    android:elevation="20dp"
+                    android:hint="Product price"
+                    android:padding="20dp"
+                    android:textColor="#E9E9EF"
+                    android:textColorHint="#F1F1EA"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:padding="5dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:id="@+id/captext_data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/layout_back_white"
+                    android:text="Current Data"
+                    android:textAlignment="center"
+                    android:textColor="#EFEAEF"
+                    android:textSize="16dp"
+                    android:textStyle="bold" />
+
+                <LinearLayout
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:background="#E6E6DE"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <CheckBox
+                        android:id="@+id/cap_check_1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="S"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/cap_check_2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="XS"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+
+                    <CheckBox
+                        android:id="@+id/cap_check_3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="XLL"
+                        android:textSize="18dp" />
+
+                    <CheckBox
+                        android:id="@+id/cap_check_4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:text="XXLL"
+                        android:textSize="18dp"
+                        android:textStyle="bold" />
+                </LinearLayout>
+                <info.hoang8f.widget.FButton
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="8dp"
+                    android:background="@drawable/layout_back_white"
+                    android:onClick="Save_Data"
+                    android:text="Save"
+                    android:textSize="20dp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+
+
+</androidx.cardview.widget.CardView>

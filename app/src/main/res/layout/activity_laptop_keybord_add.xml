@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    tools:context=".Laptop_keybordAdd">
+
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+      <com.google.android.material.appbar.AppBarLayout
+          android:id="@+id/appbar_id"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:theme="@style/AppTheme">
+          <androidx.appcompat.widget.Toolbar
+              android:id="@+id/laptop_add_toolbar"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              app:title="Laptop Desktop Add"
+              android:background="#5C58D8"
+              app:titleTextColor="#DCCECE"
+              android:textAlignment="center"/>
+      </com.google.android.material.appbar.AppBarLayout>
+
+      <ScrollView
+          android:layout_below="@+id/appbar_id"
+          android:background="@drawable/angry"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          android:padding="5dp">
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical">
+
+              <androidx.cardview.widget.CardView
+                  android:layout_marginTop="10dp"
+                  android:layout_gravity="center"
+                  app:cardCornerRadius="20dp"
+                  android:elevation="8dp"
+                  app:cardElevation="10dp"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="300dp">
+                  <ImageView
+                      android:background="@drawable/input_layout"
+                      android:layout_width="match_parent"
+                      android:layout_height="300dp"
+                      android:scaleType="fitXY"
+                      android:layout_gravity="center"
+                      android:id="@+id/laptop_keybord_image"/>
+              </androidx.cardview.widget.CardView>
+
+              <EditText
+                  android:inputType="number"
+                  android:id="@+id/laptop_cord"
+                  android:textColorHint="#D6D6CC"
+                  android:layout_marginTop="20dp"
+                  android:padding="20dp"
+                  android:background="@drawable/layout_back_white"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Product Cord"
+                  android:textStyle="bold"
+                  android:textColor="#EFEFF3"
+                  android:textSize="18sp"/>
+
+              <EditText
+                  android:id="@+id/laptop_name"
+                  android:textColorHint="#D6D6CC"
+                  android:layout_marginTop="20dp"
+                  android:padding="20dp"
+                  android:background="@drawable/layout_back_white"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Brand Name"
+                  android:textStyle="bold"
+                  android:textColor="#EFEFF3"
+                  android:textSize="18sp"/>
+
+              <EditText
+
+                  android:id="@+id/laptop_Descript"
+                  android:textColorHint="#ECECE6"
+                  android:layout_marginTop="10dp"
+                  android:padding="20dp"
+                  android:background="@drawable/layout_back_white"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Product Description"
+                  android:textStyle="bold"
+                  android:textColor="#E2E3EA"
+                  android:textSize="18sp"/>
+
+
+              <EditText
+                  android:inputType="number"
+                  android:textColorHint="#F1F1EA"
+                  android:layout_marginTop="10dp"
+                  android:padding="20dp"
+                  android:background="@drawable/layout_back_white"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:id="@+id/laptop_pdPrice"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Product price"
+                  android:textStyle="bold"
+                  android:textColor="#E9E9EF"
+                  android:textSize="18sp"/>
+
+              <EditText
+                  android:inputType="number"
+                  android:id="@+id/pd_discount_id"
+                  android:textColorHint="#F1F1EA"
+                  android:layout_marginTop="10dp"
+                  android:padding="20dp"
+                  android:background="@drawable/layout_back_white"
+                  android:layout_marginLeft="10dp"
+                  android:layout_marginRight="10dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:hint="Discount"
+                  android:textStyle="bold"
+                  android:textColor="#E9E9EF"
+                  android:textSize="18sp"/>
+
+              <TextView
+                  android:textAlignment="center"
+                  android:padding="5dp"
+                  android:layout_marginTop="8dp"
+                  android:textColor="#E1E1DB"
+                  android:textColorHint="#F1F1EA"
+                  android:background="@drawable/layout_back_white"
+                  android:layout_marginRight="8dp"
+                  android:layout_marginLeft="8dp"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"
+                  android:text="Date:"
+                  android:textSize="20sp"
+                  android:id="@+id/lap_pd_date"/>
+
+              <info.hoang8f.widget.FButton
+                  android:background="@drawable/layout_back_white"
+                  android:onClick="laptop_Data_Add"
+                  android:layout_marginLeft="8dp"
+                  android:layout_marginRight="8dp"
+                  android:layout_marginTop="10dp"
+                  android:textSize="20dp"
+                  android:textStyle="bold"
+                  android:text="Save"
+                  android:layout_width="match_parent"
+                  android:layout_height="wrap_content"/>
+
+          </LinearLayout>
+      </ScrollView>
+  </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

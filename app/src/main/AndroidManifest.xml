@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.my_ecommerce_project">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".User_Address"></activity>
+        <activity android:name=".Shoses_categoryShow" />
+        <activity android:name=".phon_rate_Show" />
+        <activity android:name=".phon_Category" />
+        <activity android:name=".Femal_DressAdd" />
+        <activity android:name=".baby_Category_Show" />
+        <activity android:name=".babyPd_Category" />
+        <activity android:name=".Baby_product_Add" />
+        <activity android:name=".phon_Category_show" />
+        <activity android:name=".All_User_longin_Show" />
+        <activity android:name=".keybord_Mouse_Add" />
+        <activity android:name=".keybord_Mouse_Category" />
+        <activity android:name=".keybord_mouse_rate_show" />
+        <activity android:name=".keybord_Category_Show" />
+        <activity android:name=".RecipeAdd" />
+        <activity android:name=".Recipe_CategoryShow" />
+        <activity android:name=".Recipe_rateShow" />
+        <activity android:name=".Home_page"/>
+        <activity android:name=".Cap_Category_Show" />
+        <activity android:name=".Show_all_user_Order" />
+        <activity android:name=".phon_pd_add" />
+        <activity android:name=".shose_Category" />
+        <activity android:name=".shose_rate_Show" />
+        <activity android:name=".Order_accept_andNotification_show" />
+        <activity android:name=".t_shairt_Category_Show" />
+        <activity android:name=".t_shairt_Category" />
+        <activity android:name=".cap_prductAdd" />
+        <activity android:name=".user_laptop_Category" />
+        <activity android:name=".Laptop_keybordAdd" />
+        <activity android:name=".Order_again_Show" />
+        <activity android:name=".Recipe_Category" />
+        <activity android:name=".Shoes_product_Add" />
+        <activity android:name=".MainActivity" />
+        <activity android:name=".User_order_payment" />
+        <activity android:name=".All_CapShow_Rate" />
+        <activity android:name=".laptop_all_rateShow" />
+        <activity android:name=".Laptop_categoryShow" />
+        <activity android:name=".Comfrom_Order_Address_show" />
+        <activity android:name=".Product_Add_All" />
+        <activity android:name=".Cap_Category" />
+        <activity android:name=".femal_Category" />
+        <activity android:name=".T_shairt_Prodcut_rateShow" />
+        <activity android:name=".femal_category_show" />
+        <activity android:name=".Baby_product_rate_show" />
+        <activity android:name=".Femal_product_rate_Show" />
+        <activity android:name=".T_shirt_Product_Add" />
+        <activity android:name=".Login_page">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

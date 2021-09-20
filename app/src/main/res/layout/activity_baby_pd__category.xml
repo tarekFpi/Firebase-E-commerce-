@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".babyPd_Category">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cap_add_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Cap product Category"
+            android:background="#5C58D8"
+            app:titleTextColor="#E4DEDE"
+            android:textAlignment="center"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <ScrollView
+        android:layout_margin="8dp"
+        android:layout_below="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_image"
+                android:layout_marginTop="7dp"
+                android:layout_centerHorizontal="true"
+                app:cardElevation="20dp"
+                android:elevation="20dp"
+                app:cardCornerRadius="15dp"
+                android:layout_width="350dp"
+                android:layout_height="350dp">
+
+                <com.denzcoskun.imageslider.ImageSlider
+                    android:background="@drawable/search_back"
+                    android:id="@+id/babyCategory_rateImage"
+                    android:layout_width="350dp"
+                    android:layout_height="350dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/dress6"
+                    app:iss_delay="0"
+                    app:iss_period="1000" >
+                </com.denzcoskun.imageslider.ImageSlider>
+            </androidx.cardview.widget.CardView>
+
+            <RatingBar
+                android:numStars="6"
+                android:clickable="true"
+                android:id="@+id/baby_rating_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/card_image"
+                android:layout_alignParentStart="true"
+                android:backgroundTint="#000DFF"
+                android:progress="1"
+                android:progressTint="#D6226A"
+                style="@style/ShapeAppearance.MaterialComponents.SmallComponent"
+                android:rating="1"
+                android:scaleX=".8"
+                android:scaleY=".8"
+                android:stepSize="0.5" />
+
+            <TextView
+                android:padding="5dp"
+                android:layout_marginRight="8dp"
+                android:id="@+id/baby_rating_value"
+                android:layout_alignParentRight="true"
+                android:textColor="#DDDDDA"
+                android:background="#000DFF"
+                android:textSize="20sp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/card_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3.3"/>
+
+
+
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:id="@+id/category_baby_Cord"
+                android:layout_below="@+id/baby_rating_value"
+                android:textColorHint="#191918"
+                android:textColor="#191918"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Product Cord:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/category_baby_discountId"
+                android:layout_marginBottom="5dp"
+                android:layout_marginRight="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBaseline="@+id/category_baby_Cord"
+                android:textColorHint="#DC24A8"
+                android:textColor="#E1135B"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="Discont:"
+                android:textSize="12sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/category_baby_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/category_baby_Cord"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Product Name:  "
+                android:textAlignment="center"
+                android:textColor="#191918"
+                android:textColorHint="#191918"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+
+
+
+            <TextView
+                android:layout_marginLeft="20dp"
+                android:id="@+id/category_baby_statusDecr"
+                android:layout_below="@+id/category_baby_name"
+                android:textColorHint="#181918"
+                android:textColor="#111211"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Desription: "
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/category_baby_statusDecr"
+                android:id="@+id/category_baby_drecpt"
+                android:textColorHint="#191918"
+                android:textColor="#191918"
+                android:textAlignment="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Product Desription"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/category_baby_drecpt"
+                android:id="@+id/category_baby_Price"
+                android:textColorHint="#FF0059"
+                android:textColor="#D30F0F"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:text="price:"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+
+            <com.cepheuen.elegantnumberbutton.view.ElegantNumberButton
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/category_baby_Price"
+                app:initialNumber="1"
+                app:textSize="16sp"
+                android:id="@+id/category_baby_Quantity"/>
+
+            <androidx.cardview.widget.CardView
+                android:layout_marginRight="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@+id/category_baby_Quantity"
+                android:id="@+id/car_t_shirt_size_color"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="15dp"
+                android:elevation="15dp">
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:layout_centerHorizontal="true"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="5dp">
+
+                    <Spinner
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:id="@+id/spinner_baby_pd_size"
+                        />
+
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/car_t_shirt_size_color"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="15dp"
+                android:layout_margin="10dp"
+                android:elevation="15dp"
+                android:layout_marginTop="10dp">
+
+                <info.hoang8f.widget.FButton
+                    android:textSize="18sp"
+                    android:textColorHint="#131312"
+                    android:textColor="#0B0B0A"
+                    android:onClick="Add_cardData"
+                    android:text="Add Cart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </androidx.cardview.widget.CardView>
+
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/category_baby_name"
+                android:layout_alignParentRight="true"
+                android:background="#E6E6E2"
+                android:clickable="true"
+                android:onClick="go_toShowCategory"
+                android:src="@drawable/ic_cart"
+                android:layout_marginRight="6dp"
+                android:tint="#121211"
+                app:rippleColor="@color/colorPrimary" />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

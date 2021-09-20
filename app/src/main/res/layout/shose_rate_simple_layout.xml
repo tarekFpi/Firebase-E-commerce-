@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="10dp"
+    android:elevation="10dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:background="@drawable/layout_bakcolor"
+        android:padding="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/layout_bakcolor"
+            android:elevation="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/shose_image_Id"
+            android:layout_width="300dp"
+            android:scaleType="fitXY"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:layout_below="@+id/shose_image_Id"
+            android:textColor="#131312"
+            android:textColorHint="#1C1C1B"
+            android:id="@+id/cate_shose_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:layout_alignParentRight="true"
+            android:textColor="#131313"
+            android:textColorHint="#131313"
+            android:layout_below="@+id/cate_shose_name"
+            android:id="@+id/cate_shose_discount"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

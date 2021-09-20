@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp">
+
+        <TextView
+            android:elevation="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/colorAccent"
+            android:textColor="@color/colorAccent"
+            android:textAlignment="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="LapTop Product Update "
+            android:textSize="23sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/lap_UPdatepd_Id"
+            android:elevation="20dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColorHint="@color/colorPrimary2"
+            android:textColor="@color/colorPrimary"
+            android:textAlignment="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Product ID: "
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+            <EditText
+                android:id="@+id/lp_Update_Name_Id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"
+                android:textColor="#151514"
+                android:textColorHint="#151514"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+            <EditText
+                android:id="@+id/lp_pdate_Price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product price"
+                android:textColor="#151514"
+                android:textColorHint="#151514"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:focusableInTouchMode="true"
+            android:focusable="true">
+
+            <EditText
+                android:id="@+id/lp_update_discount"
+                android:textColorHint="#151514"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Discount"
+                android:textStyle="bold"
+                android:textColor="#151514"
+                android:textSize="18sp"/>
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+            <info.hoang8f.widget.FButton
+                android:background="@drawable/input_layout"
+                android:id="@+id/lap_update_Data"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Update"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+
+            <info.hoang8f.widget.FButton
+                android:background="@drawable/input_layout"
+                android:id="@+id/lap_exit_btn"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="Exit"
+                android:layout_width="120dp"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</androidx.cardview.widget.CardView>

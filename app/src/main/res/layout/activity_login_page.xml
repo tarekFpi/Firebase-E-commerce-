@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:elevation="20dp"
+    app:cardElevation="20dp"
+    tools:context=".Login_page">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cap_add_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Loging page"
+            android:background="#5C58D8"
+            app:titleTextColor="#E4DEDE"
+            android:textAlignment="center"/>
+    </com.google.android.material.appbar.AppBarLayout>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_margin="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ProgressBar
+            android:visibility="invisible"
+            android:id="@+id/log_progressId"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:indeterminate="true"
+            android:backgroundTint="#234AC1"
+            android:progressBackgroundTintMode="multiply"
+            android:progressTint="#234AC1"
+            android:secondaryProgressTint="@color/colorPrimaryDark"
+              />
+
+<TextView
+    android:textAlignment="center"
+    android:singleLine="true"
+    android:id="@+id/log_data_marq"
+    android:scrollHorizontally="true"
+    android:marqueeRepeatLimit="marquee_forever"
+    android:ellipsize="marquee"
+   android:layout_centerInParent="true"
+    android:layout_below="@+id/log_progressId"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:textStyle="bold"
+    android:text="E-Commerce Android Apps Sign In"/>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_below="@+id/log_progressId"
+            android:id="@+id/loging_image"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/google"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"/>
+
+        <com.google.android.gms.common.SignInButton
+           android:id="@+id/sing_data"
+            android:background="@drawable/search_back"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/loging_image"/>
+
+    </RelativeLayout>
+</ScrollView>
+
+</androidx.cardview.widget.CardView>

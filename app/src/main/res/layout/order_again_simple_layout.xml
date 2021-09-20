@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    app:cardElevation="15dp"
+    android:elevation="15dp"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/relativ"
+        android:background="@drawable/layout_degin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+<ImageView
+    android:id="@+id/again_pd_image"
+    android:layout_marginLeft="8dp"
+    android:layout_width="150dp"
+    android:layout_height="150dp"
+    android:scaleType="fitXY"
+    android:src="@drawable/book"/>
+
+        <TextView
+            android:id="@+id/again_pd_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="10dp"
+            android:text="product Name:"
+            android:textColor="#131313"
+            android:textColorHint="#171616"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/again_pd_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/again_pd_name"
+            android:layout_marginLeft="170dp"
+            android:layout_marginTop="10dp"
+            android:text="Product price"
+            android:textColor="#1C1C1A"
+            android:textColorHint="#201E1E"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="15dp"
+    app:cardElevation="15dp"
+    app:cardCornerRadius="12dp"
+    android:layout_marginEnd="10dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="7dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/category_baby_Show_image"
+            android:layout_width="300dp"
+            android:layout_height="320dp"
+            android:layout_centerHorizontal="true"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_back"
+            android:elevation="20dp"
+            android:scaleType="fitXY" />
+
+        <TextView
+            android:id="@+id/cate_babyShow_pd_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_baby_Show_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="Item Cord"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cate_baby_Show_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cate_babyShow_pd_id"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="7dp"
+            android:text="Item Name"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cate_baby_Show_discout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cate_baby_Show_name"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Discount"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_centerHorizontal="true"
+            android:id="@+id/cate_baby_Show_size"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/cate_baby_Show_discout"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="8dp"
+            android:text="Size:"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cate_baby_Show_pd_quan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/cate_babyShow_pd_id"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:text="Item Quantity:"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/cate_baby_pd_Price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/cate_baby_Show_pd_quan"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="7dp"
+            android:text="Price:"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

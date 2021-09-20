@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Baby_product_rate_show">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+        <androidx.appcompat.widget.Toolbar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Smart Phon Rate Show"
+            android:background="#5C58D8"
+            app:titleTextColor="#E4DEDE"
+            android:textAlignment="center"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <EditText
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/appbar_id"
+        android:padding="12dp"
+        android:textStyle="bold"
+        android:textSize="18dp"
+        android:drawableLeft="@drawable/ic_search"
+        android:background="@drawable/search_back"
+        android:hint="Searh product Name"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:id="@+id/baby_order_search"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:padding="8dp"
+        android:layout_below="@+id/baby_order_search"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/recycler_baby_rate_Show"/>
+</RelativeLayout>

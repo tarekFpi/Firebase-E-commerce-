@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Show_all_user_Order">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cap_add_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="User Order Show"
+            android:background="#5C58D8"
+            app:titleTextColor="#E4DEDE"
+            android:textAlignment="center"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_marginTop="8dp"
+        android:layout_below="@+id/appbar_id"
+        android:elevation="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:background="@drawable/search_back"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:drawableLeft="@drawable/ic_search"
+            android:elevation="15dp"
+            android:hint="Search Order Date"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:id="@+id/User_all_order_search"/>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:layout_marginTop="8dp"
+            android:layout_below="@+id/User_all_order_search"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/admin_comfrom_OrderShow_recycler"/>
+    </RelativeLayout>
+</RelativeLayout>

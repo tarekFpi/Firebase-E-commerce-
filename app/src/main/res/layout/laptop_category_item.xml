@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    app:cardElevation="15dp"
+    android:layout_margin="8dp"
+    android:elevation="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:padding="10dp"
+        android:background="@color/colorPrimary2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:elevation="20dp"
+            android:layout_centerHorizontal="true"
+            android:id="@+id/category_lap_image"
+            android:layout_width="300dp"
+            android:scaleType="fitXY"
+            android:layout_height="300dp"/>
+
+        <TextView
+            android:id="@+id/cate_lap_pd_id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/category_lap_image"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:text="Item Cord"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:layout_below="@+id/cate_lap_pd_id"
+            android:id="@+id/cate_lap_pd_name"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Name"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:layout_below="@+id/cate_lap_pd_name"
+            android:id="@+id/cate_lap_discout"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Discount"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+        <TextView
+            android:layout_alignBaseline="@id/cate_lap_pd_name"
+            android:id="@+id/cate_lap_pd_quan"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="5dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Item Quantity:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/cate_lp_pd_Price"
+            android:textColor="#ECECE4"
+            android:textColorHint="#ECECE4"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/cate_lap_pd_name"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Price:"
+            android:textStyle="bold"
+            android:textSize="18sp"/>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

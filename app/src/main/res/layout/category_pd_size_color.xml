@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_margin="8dp"
+    app:cardElevation="15dp"
+    android:elevation="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <RadioGroup
+            android:id="@+id/radio_gp"
+            android:padding="10dp"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <RadioButton
+                android:id="@+id/radio_s1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="S"/>
+            <RadioButton
+                android:id="@+id/radio_s2"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="XS"/>
+
+            <RadioButton
+                android:id="@+id/radio_s3"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="XLL"/>
+
+            <RadioButton
+                android:id="@+id/radio_s4"
+                android:layout_marginLeft="20dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textStyle="bold"
+                android:textSize="18sp"
+                android:text="XXLL"/>
+        </RadioGroup>
+
+      <TextView
+          android:id="@+id/dialog_cancel_Id"
+          android:layout_marginRight="10dp"
+          android:padding="7dp"
+          android:layout_alignParentRight="true"
+          android:layout_below="@+id/radio_gp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="Cancle"
+          android:textSize="18dp"
+          android:textStyle="bold"
+          android:textColor="#222220"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

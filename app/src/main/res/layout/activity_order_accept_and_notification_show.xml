@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="20dp"
+    android:elevation="20dp"
+    tools:context=".Order_accept_andNotification_show">
+ <RelativeLayout
+     android:layout_width="match_parent"
+     android:layout_height="match_parent">
+
+      <com.google.android.material.appbar.AppBarLayout
+          android:id="@+id/appbar_id"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:theme="@style/AppTheme">
+           <androidx.appcompat.widget.Toolbar
+               android:id="@+id/cap_add_toolbar"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               app:title="Order Accepte And Notification"
+               android:background="#5C58D8"
+               app:titleTextColor="#E4DEDE"
+               android:textAlignment="center"/>
+      </com.google.android.material.appbar.AppBarLayout>
+
+      <ScrollView
+          android:layout_below="@+id/appbar_id"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:padding="8dp">
+           <RelativeLayout
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+                <EditText
+                    android:background="@drawable/search_back"
+                    android:textStyle="bold"
+                    android:textSize="18dp"
+                    android:drawableLeft="@drawable/ic_search"
+                    android:elevation="15dp"
+                    android:hint="Searh Date"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:id="@+id/edit_order_search"/>
+
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_marginTop="10dp"
+                    android:layout_below="@+id/edit_order_search"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/Order_acceptShow_all"/>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="6dp"
+                    android:background="#E6E6E2"
+                    android:clickable="true"
+                    android:onClick="go_home"
+                    android:src="@drawable/home"
+                    android:tint="#121211"
+                    app:rippleColor="@color/colorPrimary" />
+
+                <androidx.cardview.widget.CardView
+                    app:cardBackgroundColor="#1F34BD"
+                    android:id="@+id/total_price_card"
+                    android:layout_below="@+id/Order_acceptShow_all"
+                    android:layout_marginBottom="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:elevation="10dp"
+                    app:cardElevation="12dp">
+
+                     <TextView
+                         android:layout_marginLeft="8dp"
+                         android:layout_marginRight="8dp"
+                         android:padding="10dp"
+                         android:id="@+id/text_total_amount"
+                         android:background="@drawable/search_back"
+                         android:textColor="#E4E4E0"
+                         android:textStyle="bold"
+                         android:layout_marginTop="20dp"
+                         android:text="Total Score:"
+                         android:textSize="20dp"
+                         android:layout_width="wrap_content"
+                         android:layout_height="wrap_content"/>
+                </androidx.cardview.widget.CardView>
+           </RelativeLayout>
+      </ScrollView>
+ </RelativeLayout>
+
+
+</androidx.cardview.widget.CardView>

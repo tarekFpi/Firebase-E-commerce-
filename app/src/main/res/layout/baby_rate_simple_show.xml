@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:elevation="20dp"
+    app:cardElevation="20dp"
+    app:cardCornerRadius="15dp"
+    android:layout_margin="8dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/layout_bakcolor"
+        android:gravity="center"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <androidx.cardview.widget.CardView
+            app:cardElevation="15dp"
+            android:elevation="15dp"
+            app:cardCornerRadius="15dp"
+            android:layout_width="300dp"
+            android:layout_height="350dp">
+
+            <ImageView
+                android:background="@drawable/layout_bakcolor"
+                android:id="@+id/baby_rate_show_Image"
+                android:layout_width="300dp"
+                android:layout_height="350dp"
+                android:scaleType="fitXY"
+                />
+        </androidx.cardview.widget.CardView>
+
+        <RelativeLayout
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:textColor="#121211"
+                android:textAlignment="center"
+                android:id="@+id/baby_rate_show_Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Product Name"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:textColor="#0E0E0E"
+                android:layout_alignBaseline="@+id/baby_price_pdPrice"
+                android:layout_alignParentRight="true"
+                android:textAlignment="center"
+                android:id="@+id/baby_rate_show_discount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:text="Discount:"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_below="@+id/baby_rate_show_Name"
+                android:layout_marginTop="8dp"
+                android:textColor="@color/colorPrimaryDark"
+                android:textAlignment="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Price"
+                android:textStyle="bold"
+                android:padding="3dp"
+                android:id="@+id/baby_price_pdPrice"/>
+        </RelativeLayout>
+    </LinearLayout>
+</androidx.cardview.widget.CardView>

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context=".Laptop_categoryShow">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appbar_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme">
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/cap_add_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:title="Laptop And Desktop Category Show"
+            android:background="#5C58D8"
+            app:titleTextColor="#DCCECE"
+            android:textAlignment="center"/>
+    </com.google.android.material.appbar.AppBarLayout>
+
+<ScrollView
+    android:layout_below="@+id/appbar_id"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="5dp">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <androidx.recyclerview.widget.RecyclerView
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/laptop_categoryShow_recyler"/>
+
+        <androidx.cardview.widget.CardView
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:background="@color/colorPrimaryDark"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/laptop_categoryShow_recyler"
+            app:cardCornerRadius="10dp"
+            app:cardElevation="15dp"
+            android:elevation="15dp"
+            android:layout_marginTop="20dp">
+
+            <LinearLayout
+                android:background="@color/colorPrimaryDark"
+                android:padding="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:textStyle="bold"
+                    android:textColor="#EAEAE2"
+                    android:id="@+id/cate_Lap_total_score"
+                    android:layout_marginLeft="8dp"
+                    android:textSize="22sp"
+                    android:text="Total: $0,00"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+
+                <info.hoang8f.widget.FButton
+                    android:onClick="buy_category_Lapot_Data"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:textColorHint="#EAEAE4"
+                    android:textColor="#E4E4DA"
+                    android:text="Buy Now"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+</ScrollView>
+
+
+
+</RelativeLayout>

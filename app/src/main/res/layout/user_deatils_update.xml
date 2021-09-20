@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="15dp"
+    android:layout_margin="8dp"
+    android:elevation="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:background="@drawable/angryimg_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:textColor="#fff0"
+                android:elevation="20dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:text="User Address Update"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"/>
+
+            <EditText
+                android:id="@+id/edit_user_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/input_layout"
+                android:hint="User Name"
+                android:padding="20dp"
+                android:textColor="#EDEDE9"
+                android:textColorHint="#E1E1DA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_user_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/input_layout"
+                android:hint="Email"
+                android:padding="20dp"
+                android:textColor="#EDEDE9"
+                android:textColorHint="#E1E1DA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_user_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/input_layout"
+                android:hint="Lacality,area,street"
+                android:padding="20dp"
+                android:textColor="#EDEDE9"
+                android:textColorHint="#E1E1DA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/edit_user_flat_no_id"
+                android:inputType="textImeMultiLine"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:background="@drawable/input_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Flat no, Building name"
+                android:textStyle="bold"
+                android:textColor="#EDEDE9"
+                android:textColorHint="#E1E1DA"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:id="@+id/edit_user_city_id"
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:background="@drawable/input_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="City/Twon"
+                android:textStyle="bold"
+                android:textColor="#EDEDE9"
+                android:textColorHint="#F3F3EF"
+                android:textSize="18sp"/>
+
+            <EditText
+                android:layout_marginTop="10dp"
+                android:padding="20dp"
+                android:background="@drawable/input_layout"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:id="@+id/edit_user_phon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Phon Number"
+                android:textStyle="bold"
+                android:textColor="#EDEDE9"
+                android:textColorHint="#E1E1DA"
+                android:textSize="18sp"/>
+
+            <LinearLayout
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <info.hoang8f.widget.FButton
+                    android:id="@+id/edit_Adress_save"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginBottom="10dp"
+                    android:background="@drawable/layout_degin"
+                    android:text="Update"
+                    android:textSize="18dp"
+                    android:textStyle="bold" />
+
+                <info.hoang8f.widget.FButton
+                    android:layout_marginBottom="10dp"
+                    android:padding="5dp"
+                    android:id="@+id/exit_button"
+                    android:background="@drawable/layout_degin"
+                    android:layout_marginLeft="30dp"
+                    android:textSize="18dp"
+                    android:textStyle="bold"
+                    android:text="Exit"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.cardview.widget.CardView>

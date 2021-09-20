@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="14dp"
+    android:elevation="12dp"
+    tools:context=".T_shirt_Product_Add">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbar_id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:theme="@style/AppTheme">
+            <androidx.appcompat.widget.Toolbar
+                android:id="@+id/toolbar_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="T-Shirt Full Shirt Add"
+                android:background="#5C58D8"
+                app:titleTextColor="#E4DEDE"
+                android:textAlignment="center"/>
+        </com.google.android.material.appbar.AppBarLayout>
+
+        <ScrollView
+            android:layout_below="@+id/appbar_id"
+            android:background="@drawable/angryim"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:padding="5dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+                    android:layout_marginTop="10dp"
+                    android:layout_gravity="center"
+                    app:cardCornerRadius="20dp"
+                    android:elevation="8dp"
+                    app:cardElevation="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="300dp"
+                    android:layout_height="350dp">
+                    <ImageView
+                        android:background="@drawable/layout_degin"
+                        android:layout_width="300dp"
+                        android:layout_height="350dp"
+                        android:scaleType="fitXY"
+                        android:layout_gravity="center"
+                        android:id="@+id/t_shirt_PdImage"/>
+                </androidx.cardview.widget.CardView>
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/t_shirt_pdcord"
+                    android:textColorHint="#D6D6CC"
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp"
+                    android:background="@drawable/layout_degin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Cord"
+                    android:textStyle="bold"
+                    android:textColor="#EFEFF3"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/t_shirt_pdName"
+                    android:textColorHint="#D6D6CC"
+                    android:layout_marginTop="20dp"
+                    android:padding="20dp"
+                    android:background="@drawable/layout_degin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Name"
+                    android:textStyle="bold"
+                    android:textColor="#EFEFF3"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:id="@+id/t_shirt_pdDecr"
+                    android:textColorHint="#ECECE6"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/layout_degin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product Description"
+                    android:textStyle="bold"
+                    android:textColor="#E2E3EA"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:id="@+id/t_shirt_pdstock"
+                    android:textColorHint="#F1F1EA"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/layout_degin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Stock"
+                    android:textStyle="bold"
+                    android:textColor="#E0E0E4"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:textColorHint="#F1F1EA"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/layout_degin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/t_shirt_pdprice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Product price"
+                    android:textStyle="bold"
+                    android:textColor="#E9E9EF"
+                    android:textSize="18sp"/>
+
+                <EditText
+                    android:inputType="number"
+                    android:textColorHint="#F1F1EA"
+                    android:layout_marginTop="10dp"
+                    android:padding="20dp"
+                    android:background="@drawable/layout_degin"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:id="@+id/t_shirt_pddiscount"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Discount"
+                    android:textStyle="bold"
+                    android:textColor="#E9E9EF"
+                    android:textSize="18sp"/>
+                <LinearLayout
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="#E6E6DE"
+                    android:gravity="center_horizontal"
+                    android:layout_gravity="center_horizontal"
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <CheckBox
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="S"
+                        android:id="@+id/check_1"/>
+
+                    <CheckBox
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="XS"
+                        android:id="@+id/check_2"/>
+                    <CheckBox
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="XLL"
+                        android:id="@+id/check_3"/>
+                    <CheckBox
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="18dp"
+                        android:text="XXLL"
+                        android:id="@+id/check_4"/>
+                </LinearLayout>
+
+                <info.hoang8f.widget.FButton
+                    android:background="@drawable/input_layout"
+                    android:onClick="t_shirt_procutAdd"
+                    android:layout_marginLeft="8dp"
+                    android:layout_marginRight="8dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="20dp"
+                    android:textStyle="bold"
+                    android:text="Product Add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

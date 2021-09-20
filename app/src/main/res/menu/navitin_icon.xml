@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+  <group>
+      <item
+          android:icon="@drawable/home_ic"
+          android:title="Home"
+          android:id="@+id/my_hom_id"
+          app:showAsAction="never"
+           />
+
+      <item
+          android:id="@+id/my_order_Id"
+          android:title="My Orders"
+          app:showAsAction="never"
+          android:icon="@drawable/shopping_bag"/>
+
+      <item
+          android:id="@+id/my_accunt"
+          android:title="Setting"
+          app:showAsAction="never"
+          android:icon="@drawable/settings_icon"/>
+
+      <item
+          android:id="@+id/my_exit"
+          android:title="Sign Out"
+          app:showAsAction="never"
+          android:icon="@drawable/baseline_power"/>
+  </group>
+
+</menu>
